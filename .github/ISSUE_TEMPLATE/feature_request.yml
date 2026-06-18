@@ -1,0 +1,22 @@
+name: 💡 Feature request
+description: Suggest an idea or improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem or use case?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+  - type: checkboxes
+    id: consent-lock
+    attributes:
+      label: Scope check
+      description: See ETHICS.md.
+      options:
+        - label: This does not weaken the consent lock (it would still only analyze the authenticated user's own account).
+          required: true
